@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>SVG animations</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.min.css" />
+	<link rel="stylesheet" href="libs/FontAwesome/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.2/fullpage.css">
+	<link rel="stylesheet" href="css/main.css" />
+
+	<script src="libs/jquery/jquery.min.js"></script>
+	<script src="libs/owl-carousel/owl.carousel.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+	<script src="libs/MorphSVGPlugin/MorphSVGPlugin.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.2/fullpage.js"></script>
+	<script src="js/main.js"></script>
+
+</head>
+<body>
+	<div id="fullpage">
+		<div class="section" data-anchor="slide1">
+			<header class="main-head">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<a href="#" class="logo"></a>
+					</div>
+					<div class="col-md-6">
+						<div class="personal-area">
+							<a href="#" class="login">Log In</a>
+							<a href="#" class="register">Register</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			</header>
+
+			<div class="circle-wrap">
+				<svg version="1.1" class="blob-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				viewBox="0 0 402.2 254.8" style="enable-background:new 0 0 352.2 254.8;" xml:space="preserve">
+					<defs>
+						<style>
+							.cls-1 {
+								fill: url(#linear-gradient);
+							}
+							.circle-wrap image {
+								width: 50%;
+								display: none;	
+							} 
+							.main-text, .main-title, .main-description {
+								font-family: "ProximaNovaBold", sans-serif;
+								font-size: 10px;
+								fill: #41424e;
+								text-transform: uppercase;
+								letter-spacing: 4px;
+							}
+							.main-title {
+								font-size: 25px;
+								letter-spacing: 2px;
+							}
+							.main-description {
+								font-size: 5px;
+								letter-spacing: 0;
+								font-family: "ProximaNovaRegular", sans-serif;
+								fill: #999aa9;
+								text-transform: none;
+							}
+							.main-btn-bg {
+								fill: #f95079;
+							}
+							.main-btn {						
+								font-family: "ProximaNovaBold", sans-serif;
+								font-size: 5px;
+								color: #41424e;
+								text-transform: uppercase;
+								fill: #fff;
+							}
+						</style>
+						<linearGradient id="linear-gradient" x1="0.055" y1="0.69" x2="0.884" y2="0.198" gradientUnits="objectBoundingBox">
+							<stop offset="0" stop-color="#ffd672"/>
+							<stop offset="1" stop-color="#fa9032"/>
+						</linearGradient>
+					</defs>
+
+					<path id="blob-start" class="cls-1" d="M61.932-10.421c45.256,0,55.441,26.182,57.57,54.385.392,5.19.5,10.668.5,16.036,0,33.137-24.931,69.986-58.068,69.986S0,93.137,0,60,7.927-10.421,61.932-10.421Z" transform="translate(0 10.421)"/>
+					<path id="blog-one" class="cls-1" d="M60,0a60,60,0,0,1,60,60c0,33.137-25.643,100.978-58.78,100.978S0,93.137,0,60A60,60,0,0,1,60,0Z"/>
+					<circle id="blog-two" class="cls-1" cx="100" cy="100" r="100"/>
+					<g id="text-main" stroke="2">
+						<text class="main-text" x="10" y="100">Welcome to</text>
+						<text class="main-title" x="9" y="125">Pesabase</text>
+						<text class="main-description" x="10" y="145">Pesabase website and its app from the basis of the actual business that will hopefully</text>
+						<text class="main-description" x="10" y="150">entice users to easily use the system</text>
+						<a xlink:href="#">
+		    			<rect class="main-btn-bg" width="60" height="15" x="10" y="170"/>
+		    			<text class="main-btn" x="22" y="179">Register now</text>
+		  			</a>
+					</g>
+					<g>
+						<circle id="blob-end" class="cls-1" cx="290" cy="120" r="55"/>
+						<image id="phone-img" xlink:href="img/phone.png" x="180" y="75"></image>
+					</g>
+				</svg>
+			</div>
+		</div>
+
+		<div class="section" data-anchor="slide2">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h2 class="about-title">About us</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="section" data-anchor="slide3">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h2 class="about-title">About us</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</body>
+</html>

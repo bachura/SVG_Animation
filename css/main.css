@@ -1,0 +1,177 @@
+@font-face {
+	font-family: 'ProximaNovaBold';
+	src: url('../font/ProximaNova/ProximaNova-Bold.eot'),
+			 url('../font/ProximaNova/ProximaNova-Bold.woff'),
+			 url('../font/ProximaNova/ProximaNova-Bold.ttf');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'ProximaNovaRegular';
+	src: url('../font/ProximaNovaRegular/ProximaNova-Regular.eot'),
+			 url('../font/ProximaNovaRegular/ProximaNova-Regular.woff'),
+			 url('../font/ProximaNovaRegular/ProximaNova-Regular.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+/* 	GENERAL STYLE */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none; 
+}
+
+input[type='number'] {
+	-moz-appearance: textfield; 
+}
+
+button:active, button:focus, a:active, a:focus {
+	outline: none !important; 
+}
+
+button::-moz-focus-inner {
+	border: 0 !important; 
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden; 
+}
+
+body {
+	font-family: "ProximaNovaRegular", sans-serif;
+	font-weight: normal;
+	font-size: 16px; 
+}
+
+textarea:focus,
+input:focus {
+	outline: none; 
+}
+
+li {
+	list-style-type: none; 
+}
+
+section {
+	width: 100%;
+	height: auto;
+	padding: 60px 0; 
+}
+
+/* fullpage */
+#fp-nav {
+	top: 40%;
+}
+#fp-nav ul { 
+	counter-reset: item; 
+}
+#fp-nav ul li {
+	margin-bottom: 0;
+	padding: 20px 0;
+	list-style-type: none;
+	font-family: "ProximaNovaBold", sans-serif;
+	font-size: 12px;
+}
+#fp-nav ul li:before {
+	content: counter(item, decimal-leading-zero) " "; 
+	counter-increment: item;
+}
+#fp-nav ul li .fp-tooltip {
+	position: relative;
+	transform: rotate(-90deg);
+}
+#fp-nav ul li:hover .fp-tooltip, #fp-nav.fp-show-active a.active + .fp-tooltip {
+	width: 45px;
+}
+#fp-nav ul li .fp-tooltip.fp-right {
+	right: 50px;
+}
+#fp-nav ul li a.active:after {
+	content: "";
+	bottom: -155px;
+	left: 50%;
+	width: 1px;
+	height: 150px;
+	position: absolute;
+	background: #ccc;
+}
+#fp-nav ul li .fp-tooltip {
+	top: 30px;
+	font-family: "ProximaNovaBold", sans-serif;
+	font-size: 36px;
+	color: #41424e;
+}
+#fp-nav ul li:hover .fp-tooltip {
+	opacity: 0;
+}
+#fp-nav ul li a, .fp-slidesNav ul li a {
+	/*border: 1px solid rebeccapurple;*/
+	top: -30px;
+	padding: 20px 0;
+}
+#fp-nav ul li a span {
+	display: none;
+}
+/* end fullpage */
+
+
+/* 	END GENERAL STYLE */
+
+
+/* SVG ANIMATION */
+.circle-wrap {
+	height: 100%;
+}
+.blob-svg {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	width: 100vw;
+	height: 100vh;
+}
+#text-main {
+	display: none;
+}
+/* END SVG ANIMATION */
+
+
+/* HEADER */
+.main-head {
+	padding-top: 50px;
+	line-height: 40px;
+	position: relative;
+	z-index: 1;
+}
+.logo {
+	display: block;
+	background: url(../img/Pesabase_logo.svg) no-repeat left center;
+	min-height: 40px;
+}
+.personal-area {
+	text-align: right;
+}
+.personal-area a {
+	padding: 15px 45px;
+	font-family: "ProximaNovaBold", sans-serif;
+	font-size: 16px;
+	color: #41424e;
+	border: 1px solid transparent;
+	transition: .2s;
+	-webkit-transition: .2s;
+}
+.personal-area a:hover {
+	border: 1px solid #41424e;
+}
+/* END HEADER */
+
+/* ABOUT US */
+.about-title {
+	font-family: "ProximaNovaBold", sans-serif;
+	font-size: 22px;
+	color: #41424e;
+	text-align: center;
+	text-transform: uppercase;
+}
+/* END ABOUT US */
